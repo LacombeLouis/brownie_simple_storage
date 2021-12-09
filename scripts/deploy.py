@@ -1,6 +1,16 @@
 from brownie import accounts, config, SimpleStorage, network
 
 """
+To see what happens and deploy contracts use:
+
+brownie console
+
+then you can run:
+account = accounts[0]
+simple_storage = SimpleStorage.deploy({"from": account})
+simple_storage.retrieve()
+
+
 You can specify your accounts specifically and always have them included in the accounts created by ganache
 account = accounts.add(config["wallets"]["from_key"])
 """
